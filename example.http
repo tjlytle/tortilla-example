@@ -1,0 +1,40 @@
+GET localhost/list/
+Authorization: Bearer: super_secret
+
+###
+
+POST localhost/list/
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+
+title=A Third List
+
+###
+
+GET localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536
+Authorization: Bearer: super_secret
+
+###
+
+GET localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+
+###
+
+POST localhost/list/1c34965f-84c5-49d8-a842-300a8cf630fc/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+
+title=Work on some notes.
+###
+
+GET localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+
+###
+
+POST localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+
+status=todo

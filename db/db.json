@@ -1,0 +1,32 @@
+{
+    "fba7928f-d214-4ea7-9b4c-e5c24e350db5": {
+        "lists": {
+            "2777a316-1b08-4db1-a8eb-13789a90f536": {
+                "title": "My List",
+                "items": {
+                    "e3689bfc-bb70-4bd2-9b74-8832c65b9b04": {
+                        "status": "Todo",
+                        "title": "Write some code"
+                    },
+                    "ccd1ef53-1d3d-4b3c-9a9c-04cf6d0d0f73": {
+                        "status": "Todo",
+                        "title": "Another task again again"
+                    }
+                }
+            },
+            "30ecdcd5-18c6-4a91-a513-48b976aee9c2": {
+                "title": "A Second List",
+                "items": []
+            },
+            "1c34965f-84c5-49d8-a842-300a8cf630fc": {
+                "title": "A Third List",
+                "items": {
+                    "68030514-24b2-4c49-8a09-da36bb3613d1": {
+                        "status": "Todo",
+                        "title": "Work on some notes."
+                    }
+                }
+            }
+        }
+    }
+}

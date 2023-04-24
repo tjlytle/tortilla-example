@@ -1,0 +1,17 @@
+{
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Example\\": "html"
+    }
+  },
+  "require": {
+    "phoneburner/http-tortilla": "dev-develop",
+    "laminas/laminas-diactoros": "^2.25",
+    "nikic/fast-route": "^1.3",
+    "php-http/message": "^1.14",
+    "psr/http-server-middleware": "^1.0",
+    "ramsey/uuid": "^4.7",
+    "laminas/laminas-httphandlerrunner": "^2.5"
+  }
+}

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web:
+    networks:
+      - development
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+  php:
+    networks:
+      - development
+    build: ./php
+    volumes:
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./src:/var/www/html
+      - ./vendor:/var/www/vendor
+      - ./db:/var/www/db
+networks:
+  development:
+    ipam:
+      config:
+        - subnet: "${SUBNET:-172.25.0.0/16}"
