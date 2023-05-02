@@ -4,6 +4,7 @@ namespace Example\Todo\Api;
 
 use Example\Api\Resolver;
 use Example\Repository\JsonDb;
+use Example\Request\ServerRequest;
 use Example\Todo\Item;
 use Example\Todo\ItemCollection;
 use Psr\Http\Message\ServerRequestInterface;
@@ -15,6 +16,8 @@ readonly class ItemResolver implements Resolver
 
     public function resolve(ServerRequestInterface $request): Item|ItemCollection
     {
+        $request = ServerRequest::instance($request);
+
         // the authed user
         if ($user_id = $request->getAttribute('user_id')) {
             $user_id = Uuid::fromString($user_id);
@@ -30,7 +33,7 @@ readonly class ItemResolver implements Resolver
         }
 
         // all items for a list with optional filter
-        $status = $request->getQueryParams()['status'] ?? null;
+        $status = $request->getQueryParam('status', null);
         if (isset($args['list_id'])) {
             $list_id = Uuid::fromString($args['list_id']);
 
