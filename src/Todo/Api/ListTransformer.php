@@ -19,7 +19,8 @@ readonly class ListTransformer implements Transformer
                         'href' => '/list/' . $resource->id
                     ],
                     'items' => [
-                        'href' => '/list/' . $resource->id . '/items'
+                        'href' => '/list/' . $resource->id . '/items{?status}',
+                        'templated' => true,
                     ]
                 ],
                 'title' => $resource->title,

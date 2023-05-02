@@ -1,0 +1,597 @@
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=status
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123528.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=todo
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123521.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=todo
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123442.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=done
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123437.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=done
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123143.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123134.200.json
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123127.200.json
+
+###
+
+GET http://localhost/list/
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T123100.200.json
+
+###
+
+GET http://localhost/item/c09c2059-6414-4ca3-9786-83603a484d2c
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121649.200.json
+
+###
+
+GET http://localhost/item/c09c2059-6414-4ca3-9786-83603a484d2c
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121630.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121538.200.json
+
+###
+
+POST http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Add the features.
+
+<> 2023-05-02T121534.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121528.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121221.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121206.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121022.200.json
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T121012.200.json
+
+###
+
+GET http://localhost/list/
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T120958.200.json
+
+###
+
+GET http://localhost/list/
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T120759.404.txt
+
+###
+
+GET http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T120753.404.txt
+
+###
+
+GET http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: SALT_SESS_DEV=581de69fd31afaff9646c480054c108ec151d9e6d599e9fe0c5fc06177c82954; XDEBUG_SESSION=PHPSTORM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-05-02T120734.404.txt
+
+###
+
+POST http://localhost/list/30ecdcd5-18c6-4a91-a513-48b976aee9c2/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Add the features.
+
+<> 2023-05-02T120708.404.txt
+
+###
+
+GET https://api.joind.in
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T030607.200.json
+
+###
+
+GET https://api.joind.in/v2.1/events/8170/talks
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T025304.200.json
+
+###
+
+GET https://api.joind.in/v2.1/events/8170
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T024540.200.json
+
+###
+
+GET https://api.joind.in/v2.1/tracks/1582?verbose=yes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T010926.200.json
+
+###
+
+GET https://api.joind.in/v2.1/tracks/1582
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T010907.200.json
+
+###
+
+GET https://api.joind.in/v2.1/talks/29113/speakers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T010355.200.json
+
+###
+
+GET https://api.joind.in/v2.1/talks/29113
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-29T010141.200.json
+
+###
+
+POST http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=todo
+
+<> 2023-04-24T162141.200.json
+
+###
+
+POST http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T162115.200.json
+
+###
+
+POST http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161957.200.html
+
+###
+
+POST http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161933.200.html
+
+###
+
+POST http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161859.200.html
+
+###
+
+PUT http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: XDEBUG_SESSION=17206
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+###
+
+PUT http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161832.500.txt
+
+###
+
+PUT http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161729.200.html
+
+###
+
+PUT http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+status=done
+
+<> 2023-04-24T161637.200.html
+
+###
+
+GET http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T161616.200.json
+
+###
+
+POST http://localhost/list/1c34965f-84c5-49d8-a842-300a8cf630fc/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Work on some notes.
+
+<> 2023-04-24T160558.200.json
+
+###
+
+POST http://localhost/list/
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 18
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=A Third List
+
+<> 2023-04-24T160535.200.json
+
+###
+
+POST http://localhost/list/
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=A Second List
+
+<> 2023-04-24T160452.200.html
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task again again
+
+<> 2023-04-24T160413.200.json
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task again
+
+<> 2023-04-24T160128.200.json
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 18
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task
+
+<> 2023-04-24T160053.200.html
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 18
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task
+
+<> 2023-04-24T155613.200.html
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 18
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task
+
+<> 2023-04-24T155527.200.html
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Length: 18
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task
+
+<> 2023-04-24T155439.500.txt
+
+###
+
+POST http://localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items
+Authorization: Bearer: super_secret
+Content-Length: 18
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+title=Another task
+
+<> 2023-04-24T155330.200.html
+
+###
+
+GET http://localhost/item/e3689bfc-bb70-4bd2-9b74-8832c65b9b04
+Authorization: Bearer: super_secret
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-24T155225.200.json
+
+###
+

@@ -11,7 +11,7 @@ title=A Third List
 
 ###
 
-GET localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536
+GET localhost/list/2777a316-1b08-4db1-a8eb-13789a90f536/items?status=status
 Authorization: Bearer: super_secret
 
 ###
