@@ -20,7 +20,7 @@ class ApiHandler implements RequestHandlerInterface
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         return match ($this->operation) {
-            Operation::READ => new JsonResponse(
+            Operation::READ =>  HalResponse::make(
                 $this->transformer->transform(
                     $this->resolver->resolve($request),
                     $request
@@ -32,14 +32,14 @@ class ApiHandler implements RequestHandlerInterface
                     return new EmptyResponse();
                 }
 
-                return new JsonResponse(
+                return HalResponse::make(
                     $this->transformer->transform(
                         $response,
                         $request
                     )
                 );
             })(),
-            Operation::UPDATE => new JsonResponse(
+            Operation::UPDATE => HalResponse::make(
                 $this->transformer->transform(
                     $this->hydrator->update(
                         $this->resolver->resolve($request),
@@ -56,7 +56,7 @@ class ApiHandler implements RequestHandlerInterface
                     return new EmptyResponse();
                 }
 
-                return new JsonResponse(
+                return HalResponse::make(
                     $this->transformer->transform(
                         $response,
                         $request
