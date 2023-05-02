@@ -4,6 +4,7 @@ namespace Example\Todo\Api;
 
 use Example\Api\Resolver;
 use Example\Repository\JsonDb;
+use Example\Request\ServerRequest;
 use Example\Todo\TodoList;
 use Example\Todo\TodoListCollection;
 use Psr\Http\Message\ServerRequestInterface;
@@ -15,11 +16,11 @@ readonly class ListResolver implements Resolver
 
     public function resolve(ServerRequestInterface $request): TodoList|TodoListCollection
     {
-        if ($user_id = $request->getAttribute('user_id')) {
-            $user_id = Uuid::fromString($user_id);
-        }
+        $request = ServerRequest::instance($request);
 
-        $args = $request->getAttribute('route_args') ?? [];
+        $user_id = $request->getUserId();
+        $args = $request->getRouteArgs();
+
         // a specific list
         if (isset($args['list_id'])) {
             return $this->json_db->getListById($user_id, Uuid::fromString($args['list_id']));

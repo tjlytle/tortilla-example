@@ -3,6 +3,7 @@
 namespace Example\Middleware;
 
 use Example\Api\ApiHandler;
+use Example\Request\ServerRequest;
 use Example\Route\Config;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -14,11 +15,9 @@ class ApiDispatcher implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        if (!$config = $request->getAttribute('route_config')) {
-            return $handler->handle($request);
-        }
+        $request = ServerRequest::instance($request);
 
-        if (!($config instanceof Config)) {
+        if(!$config = $request->getRouteConfig()) {
             return $handler->handle($request);
         }
 

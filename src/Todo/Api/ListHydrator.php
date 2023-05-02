@@ -4,9 +4,9 @@ namespace Example\Todo\Api;
 
 use Example\Api\Hydrator;
 use Example\Repository\JsonDb;
+use Example\Request\ServerRequest;
 use Example\Todo\TodoList;
 use Psr\Http\Message\ServerRequestInterface;
-use Ramsey\Uuid\Uuid;
 
 class ListHydrator implements Hydrator
 {
@@ -19,11 +19,8 @@ class ListHydrator implements Hydrator
 
     public function create(ServerRequestInterface $request): ?object
     {
-        if (!($user_id = $request->getAttribute('user_id'))) {
-            throw new \RuntimeException('no authed user');
-        }
-
-        $user_id = Uuid::fromString($user_id);
+        $request = ServerRequest::instance($request);
+        $user_id = $request->getUserId();
 
         $list = TodoList::make($request->getParsedBody()['title']);
 

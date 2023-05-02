@@ -4,6 +4,7 @@ namespace Example\Todo\Api;
 
 use Example\Api\Hydrator;
 use Example\Repository\JsonDb;
+use Example\Request\ServerRequest;
 use Example\Todo\Item;
 use Example\Todo\Status;
 use Psr\Http\Message\ServerRequestInterface;
@@ -15,17 +16,15 @@ readonly class ItemHydrator implements Hydrator
 
     public function update(object $resource, ServerRequestInterface $request): object
     {
-        if (!($user_id = $request->getAttribute('user_id'))) {
-            throw new \RuntimeException('no authed user');
-        }
+        $request = ServerRequest::instance($request);
 
-        $args = $request->getAttribute('route_args') ?? [];
+        $user_id = $request->getUserId();
+        $args = $request->getRouteArgs();
 
         if (!$args['item_id']) {
             throw new \RuntimeException('missing list context');
         }
 
-        $user_id = Uuid::fromString($user_id);
         $item_id = Uuid::fromString($args['item_id']);
 
         $data = $request->getParsedBody();
@@ -39,6 +38,8 @@ readonly class ItemHydrator implements Hydrator
 
     public function create(ServerRequestInterface $request): ?object
     {
+        $request = ServerRequest::instance($request);
+
         $item = $request->getParsedBody();
 
         if (!isset($item['title'])) {
@@ -51,7 +52,7 @@ readonly class ItemHydrator implements Hydrator
             throw new \RuntimeException('no authed user');
         }
 
-        $args = $request->getAttribute('route_args') ?? [];
+        $args = $request->getRouteArgs();
 
         if (!$args['list_id']) {
             throw new \RuntimeException('missing list context');

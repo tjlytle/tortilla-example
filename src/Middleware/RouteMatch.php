@@ -2,6 +2,7 @@
 
 namespace Example\Middleware;
 
+use Example\Route\Config;
 use FastRoute\Dispatcher;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -17,7 +18,7 @@ class RouteMatch implements MiddlewareInterface
         $result = $this->dispatcher->dispatch($request->getMethod(), $request->getUri()->getPath());
 
         if ($result[0] === Dispatcher::FOUND) {
-            $request = $request->withAttribute('route_config', $result[1])->withAttribute('route_args', $result[2]);
+            $request = $request->withAttribute(Config::class, $result[1])->withAttribute('route_args', $result[2]);
         }
 
         return $handler->handle($request);

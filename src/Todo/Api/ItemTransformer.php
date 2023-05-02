@@ -3,6 +3,7 @@
 namespace Example\Todo\Api;
 
 use Example\Api\Transformer;
+use Example\Request\ServerRequest;
 use Example\Todo\Item;
 use Example\Todo\ItemCollection;
 use Psr\Http\Message\ServerRequestInterface;
@@ -11,6 +12,8 @@ readonly class ItemTransformer implements Transformer
 {
     public function transform(object $resource, ServerRequestInterface $request): array
     {
+        $request = ServerRequest::instance($request);
+
         if ($resource instanceof Item) {
             return [
                 '_links' => [
@@ -24,7 +27,7 @@ readonly class ItemTransformer implements Transformer
         }
 
         // we only get this when using a list
-        $args = $request->getAttribute('route_args') ?? [];
+        $args = $request->getRouteArgs();
         if (empty($args['list_id'])) {
             throw new \RuntimeException('can not transform item collection without list context');
         }

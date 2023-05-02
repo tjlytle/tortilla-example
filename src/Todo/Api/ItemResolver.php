@@ -18,12 +18,9 @@ readonly class ItemResolver implements Resolver
     {
         $request = ServerRequest::instance($request);
 
-        // the authed user
-        if ($user_id = $request->getAttribute('user_id')) {
-            $user_id = Uuid::fromString($user_id);
-        }
+        $user_id = $request->getUserId();
+        $args = $request->getRouteArgs();
 
-        $args = $request->getAttribute('route_args') ?? [];
         // a specific id
         if (isset($args['item_id'])) {
             return $this->json_db->getItemById(

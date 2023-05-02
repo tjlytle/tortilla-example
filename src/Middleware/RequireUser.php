@@ -2,6 +2,7 @@
 
 namespace Example\Middleware;
 
+use Example\Request\ServerRequest;
 use Laminas\Diactoros\Response\JsonResponse;
 use Laminas\Diactoros\Response\TextResponse;
 use Psr\Http\Message\ResponseInterface;
@@ -14,7 +15,8 @@ class RequireUser implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        if (!$request->getAttribute('user_id')) {
+        $request = ServerRequest::instance($request);
+        if (!$request->hasUserId()) {
             return new TextResponse('401 Unauthorized', 401);
         }
 
