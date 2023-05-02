@@ -2,6 +2,7 @@
 
 namespace Example\Repository;
 
+use Example\Exception\NotFound;
 use Example\Todo\Item;
 use Example\Todo\Status;
 use Example\Todo\TodoList;
@@ -44,7 +45,7 @@ class JsonDb
         }
 
         if (!isset($this->data[$user_id->toString()]['lists'][$list_id->toString()])) {
-            throw new \RuntimeException('could not find list');
+            throw NotFound::make('list', $list_id->toString());
         }
 
         $data = $this->data[$user_id->toString()]['lists'][$list_id->toString()];
@@ -63,7 +64,7 @@ class JsonDb
         }
 
         if (!isset($this->data[$user_id->toString()]['lists'][$list_id->toString()])) {
-            throw new \RuntimeException('could not find list');
+            throw NotFound::make('list', $list_id->toString());
         }
 
         foreach ($this->data[$user_id->toString()]['lists'][$list_id->toString()]['items'] as $id => $data) {
@@ -96,7 +97,7 @@ class JsonDb
             }
         }
 
-        throw new \RuntimeException('could not find item');
+        throw NotFound::make('item', $item_id->toString());
     }
 
     public function updateItemStatus(UuidInterface $user_id, UuidInterface $item_id, Status $status): void
@@ -115,7 +116,7 @@ class JsonDb
             }
         }
 
-        throw new \RuntimeException('could not find item');
+        throw NotFound::make('item', $item_id->toString());
     }
 
     public function addItem(UuidInterface $user_id, UuidInterface $list_id, Item $item): void
@@ -125,7 +126,7 @@ class JsonDb
         }
 
         if (!isset($this->data[$user_id->toString()]['lists'][$list_id->toString()])) {
-            throw new \RuntimeException('could not find list');
+            throw NotFound::make('list', $list_id->toString());
         }
 
         $this->data[$user_id->toString()]['lists'][$list_id->toString()]['items'][$item->id->toString()] = [

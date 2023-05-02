@@ -14,8 +14,11 @@ class ExceptionHandler implements MiddlewareInterface
     {
         try {
             return $handler->handle($request);
-        } catch (\Exception) {
-            // TODO: wrangle an exception into something meaningful?
+        } catch (\Exception $e) {
+            if ($e instanceof ResponseInterface) {
+                return $e;
+            }
+
             return new TextResponse('Server Error', 500);
         }
     }
