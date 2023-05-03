@@ -3,7 +3,6 @@
 namespace Example\Api;
 
 use Laminas\Diactoros\Response\EmptyResponse;
-use Laminas\Diactoros\Response\JsonResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
@@ -21,10 +20,9 @@ class ApiHandler implements RequestHandlerInterface
     {
         return match ($this->operation) {
             Operation::READ =>  HalResponse::make(
-                $this->transformer->transform(
-                    $this->resolver->resolve($request),
-                    $request
-                )
+                $this->resolver->resolve($request),
+                $this->transformer,
+                $request
             ),
             Operation::CREATE => (function() use ($request) {
                 $response = $this->hydrator->create($request);
@@ -33,18 +31,18 @@ class ApiHandler implements RequestHandlerInterface
                 }
 
                 return HalResponse::make(
-                    $this->transformer->transform(
-                        $response,
-                        $request
-                    )
+                    $response,
+                    $this->transformer,
+                    $request
                 );
             })(),
             Operation::UPDATE => HalResponse::make(
-                $this->transformer->transform(
-                    $this->hydrator->update(
-                        $this->resolver->resolve($request),
-                        $request),
-                    $request)
+                $this->hydrator->update(
+                    $this->resolver->resolve($request),
+                    $request
+                ),
+                $this->transformer,
+                $request
             ),
             Operation::DELETE => (function() use ($request) {
                 $response = $this->hydrator->delete(
@@ -57,10 +55,9 @@ class ApiHandler implements RequestHandlerInterface
                 }
 
                 return HalResponse::make(
-                    $this->transformer->transform(
-                        $response,
-                        $request
-                    )
+                    $response,
+                    $this->transformer,
+                    $request
                 );
             })(),
         };

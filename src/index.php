@@ -3,6 +3,7 @@
 use Example\Api\Operation;
 use Example\Middleware\ApiDispatcher;
 use Example\Middleware\BearerAuth;
+use Example\Middleware\Pager;
 use Example\Middleware\ExceptionHandler;
 use Example\Middleware\NotFoundHandler;
 use Example\Middleware\RequireUser;
@@ -27,12 +28,11 @@ $list_resolver = new ListResolver($repository);
 $list_hydrator = new ListHydrator($repository);
 $item_resolver = new ItemResolver($repository);
 $item_hydrator = new ItemHydrator($repository);
+$item_transformer = new ItemTransformer();
+$list_transformer = new ListTransformer();
 
 // our routes
-$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) use ($list_resolver, $item_resolver, $list_hydrator, $item_hydrator) {
-    $item_transformer = new ItemTransformer();
-    $list_transformer = new ListTransformer();
-
+$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) use ($list_resolver, $item_resolver, $list_hydrator, $item_hydrator, $list_transformer, $item_transformer) {
     // get a collection of lists or create a new list
     $r->addRoute('GET', '/list[/]', new Config(
         $list_resolver,
@@ -95,6 +95,7 @@ $stack->add(new BearerAuth([
 ]));
 $stack->add(new RequireUser());
 $stack->add(new RouteMatch($dispatcher));
+$stack->add(new Pager());
 $stack->add(new ApiDispatcher());
 
 // app execution
