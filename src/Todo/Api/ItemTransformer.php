@@ -18,7 +18,7 @@ readonly class ItemTransformer implements Transformer
             return [
                 '_links' => [
                     'self' => [
-                        'href' => '/item/' . $resource->id
+                        'href' => (string) $resource
                     ]
                 ],
                 'title' => $resource->title,
@@ -39,7 +39,7 @@ readonly class ItemTransformer implements Transformer
                         // TODO: support paging
                         'href' => '/list/' . $args['list_id'] . '/items'
                     ],
-                    'item' => array_map(fn(Item $item) => ['href' => '/item/' . $item->id, 'title' => $item->title], iterator_to_array($resource))
+                    'item' => array_map(fn(Item $item) => ['href' => (string) $item, 'title' => $item->title], iterator_to_array($resource))
                 ]
             ];
         }
